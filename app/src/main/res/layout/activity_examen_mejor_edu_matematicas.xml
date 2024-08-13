@@ -161,7 +161,10 @@
                     android:backgroundTint="#00796B"
                     android:textColor="@android:color/white"
                     android:textSize="18sp"
-                    android:fontFamily="@font/staatliches"/>
+                    android:layout_margin="8dp"
+                    android:fontFamily="@font/staatliches"
+                    android:background="@drawable/custom_button"
+                    android:drawableLeft="@drawable/baseline_arrow_back_ios_24"/>
 
                 <Button
                     android:id="@+id/btn_next"
@@ -170,9 +173,12 @@
                     android:layout_weight="1"
                     android:text="SIGUIENTE"
                     android:backgroundTint="#00796B"
+                    android:layout_margin="8dp"
                     android:textColor="@android:color/white"
                     android:textSize="18sp"
-                    android:fontFamily="@font/staatliches"/>
+                    android:fontFamily="@font/staatliches"
+                    android:background="@drawable/custom_button"
+                    android:drawableRight="@drawable/baseline_arrow_forward_ios_24"/>
             </LinearLayout>
 
             <Button
@@ -182,8 +188,11 @@
                 android:text="Enviar Examen"
                 android:layout_gravity="center"
                 android:backgroundTint="@color/student_color_accent"
+                android:textColor="@android:color/white"
                 android:layout_marginTop="16dp"
-                android:fontFamily="@font/staatliches"/>
+                android:fontFamily="@font/staatliches"
+                android:background="@drawable/custom_button_send"
+                android:drawableTop="@drawable/baseline_send_24"/>
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

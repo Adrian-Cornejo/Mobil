@@ -11,6 +11,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 public class SeleccionarExamenResultados extends AppCompatActivity {
 
     private CardView cardMejorEdu, cardOlimpiada;
@@ -28,6 +30,14 @@ public class SeleccionarExamenResultados extends AppCompatActivity {
                 Intent intent = new Intent(SeleccionarExamenResultados.this , verProgresoOlimpiada.class);
                 startActivity(intent);
 
+            }
+        });
+        FloatingActionButton fab = findViewById(R.id.fab_menu);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SeleccionarExamenResultados.this, home.class);
+                startActivity(intent);
             }
         });
 

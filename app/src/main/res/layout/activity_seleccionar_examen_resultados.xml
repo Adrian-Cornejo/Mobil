@@ -1,119 +1,133 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fillViewport="true"
-    android:background="@color/student_color_primary"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:background="@color/student_color_primary"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#137271"
+                android:elevation="4dp"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:title=""
+                app:titleTextColor="@android:color/white">
+
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SIMULASCORE"
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp"
+                    android:fontFamily="@font/staatliches"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/header001"/>
+            </androidx.appcompat.widget.Toolbar>
+
+            <!-- Card for Examen Mejoredu -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardMejoredu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="6dp"
+                android:onClick="onCardClick">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/student_text_secondary"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:src="@drawable/olim"
+                        android:contentDescription="examen mejoredu"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="Examen Mejoredu"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/staatliches"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Card for Examen Olimpiada del Conocimiento -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardOlimpiada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="30dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="6dp"
+                android:onClick="onCardClick">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/student_text_secondary"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:src="@drawable/olimpiada"
+                        android:contentDescription="examen olimpiada"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="Examen Olimpiada del Conocimiento"
+                        android:fontFamily="@font/staatliches"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- FloatingActionButton en la parte inferior derecha -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_menu"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:background="#137271"
-            android:elevation="4dp"
-            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-            app:title=""
-            app:titleTextColor="@android:color/white">
-
-            <TextView
-                android:id="@+id/toolbar_title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="SIMULASCORE"
-                android:textColor="@android:color/white"
-                android:textSize="30sp"
-                android:fontFamily="@font/staatliches"/>
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/header001"/>
-
-        </androidx.appcompat.widget.Toolbar>
-
-        <!-- Card for Examen Mejoredu -->
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardMejoredu"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:layout_marginLeft="50dp"
-            android:layout_marginRight="50dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="6dp"
-            android:onClick="onCardClick">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:background="@color/student_text_secondary"
-                android:padding="16dp">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    android:src="@drawable/olim"
-                    android:contentDescription="examen mejoredu"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
-                    android:text="Examen Mejoredu"
-                    android:textColor="@android:color/white"
-                    android:textSize="20sp"
-                    android:fontFamily="@font/staatliches"
-
-                    android:gravity="center"/>
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-        <!-- Card for Examen Olimpiada del Conocimiento -->
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardOlimpiada"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:layout_marginRight="50dp"
-            android:layout_marginTop="30dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="6dp"
-            android:onClick="onCardClick">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:background="@color/student_text_secondary"
-                android:padding="16dp">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    android:src="@drawable/olimpiada"
-                    android:contentDescription="examen olimpiada"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
-                    android:text="Examen Olimpiada del Conocimiento"
-                    android:fontFamily="@font/staatliches"
-                    android:textColor="@android:color/white"
-                    android:textSize="20sp"
-                    android:gravity="center"/>
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-    </LinearLayout>
-</ScrollView>
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:src="@drawable/baseline_home_24"
+        android:contentDescription="Menú"
+        app:backgroundTint="@color/student_color_accent" />
+</FrameLayout>

@@ -22,6 +22,8 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -36,6 +38,7 @@ public class ExamenMejorEduSeleccionarMateria extends AppCompatActivity {
     private int progresoMatematicas = 1;
     private int progresoFormacion = 1;
 
+
     private int color = 000;
 
     @Override
@@ -47,6 +50,8 @@ public class ExamenMejorEduSeleccionarMateria extends AppCompatActivity {
         cardMatematicas = findViewById(R.id.cardMatematicas);
         cardFCE = findViewById(R.id.cardFCE);
 
+        FloatingActionButton fab = findViewById(R.id.fab_menu);
+
         SharedPreferences sharedPreferences = getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
         String email = sharedPreferences.getString(EMAIL_KEY, null);
 
@@ -57,6 +62,13 @@ public class ExamenMejorEduSeleccionarMateria extends AppCompatActivity {
         }
 
         setupCardListeners();
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               Intent intent = new Intent(ExamenMejorEduSeleccionarMateria.this, home.class);
+               startActivity(intent);
+            }
+        });
     }
 
     private void setupCardListeners() {

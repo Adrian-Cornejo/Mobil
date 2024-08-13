@@ -396,7 +396,7 @@ public class ExamenOlimpiada extends AppCompatActivity {
                     @Override
                     public void onResponse(String response) {
                         Log.d(TAG, "Respuestas guardadas exitosamente: " + response);
-                        Intent intent = new Intent(ExamenOlimpiada.this, ExamenMejoredu.class);
+                        Intent intent = new Intent(ExamenOlimpiada.this, home.class);
                         startActivity(intent);
                         finish();
                     }

@@ -2,10 +2,12 @@ package com.example.simulascore;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -31,6 +33,7 @@ import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.data.LineDataSet;
 import com.github.mikephil.charting.formatter.ValueFormatter;
 import com.github.mikephil.charting.utils.EntryXComparator;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -70,6 +73,14 @@ public class verProgresoOlimpiada extends AppCompatActivity {
         }
 
         fetchExamenes();
+        FloatingActionButton fab = findViewById(R.id.fab_menu);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(verProgresoOlimpiada.this, home.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void fetchExamenes() {

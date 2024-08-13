@@ -23,6 +23,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -51,6 +52,14 @@ public class RetroalimentacionOlimpiada extends AppCompatActivity {
         } else {
             fetchExamenes(); // Llamada para obtener y mostrar los datos
         }
+        FloatingActionButton fab = findViewById(R.id.fab_menu);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(RetroalimentacionOlimpiada.this, home.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void fetchExamenes() {

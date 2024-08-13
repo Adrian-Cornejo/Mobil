@@ -11,6 +11,7 @@ import android.provider.MediaStore;
 import android.text.InputType;
 import android.util.Base64;
 import android.util.Log;
+import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
@@ -25,6 +26,7 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.bumptech.glide.Glide;
 import com.example.simulascore.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -62,6 +64,14 @@ public class EditProfileActivity extends AppCompatActivity {
 
         SharedPreferences sharedPreferences = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
         email = sharedPreferences.getString(EMAIL_KEY, null);
+        FloatingActionButton fab = findViewById(R.id.fab_menu);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(EditProfileActivity.this, home.class);
+                startActivity(intent);
+            }
+        });
 
         if (email != null) {
             fetchAlumnoInfo(email);
@@ -76,6 +86,7 @@ public class EditProfileActivity extends AppCompatActivity {
                 }
             }
         });
+
 
         btnChangePassword.setOnClickListener(v -> {
             showChangePasswordDialog(this);

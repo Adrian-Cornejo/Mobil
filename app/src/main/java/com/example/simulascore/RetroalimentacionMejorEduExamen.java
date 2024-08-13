@@ -48,7 +48,7 @@ public class RetroalimentacionMejorEduExamen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_retroalimentacion_olimpiada_examen);
+        setContentView(R.layout.activity_retroalimentacion_mejoredu_examen);
 
         tvQuestion = findViewById(R.id.tv_question);
         profileName = findViewById(R.id.tv_student_info);

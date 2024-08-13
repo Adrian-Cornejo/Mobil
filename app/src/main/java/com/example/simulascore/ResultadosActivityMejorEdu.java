@@ -18,6 +18,7 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -48,6 +49,14 @@ public class ResultadosActivityMejorEdu extends AppCompatActivity {
         } else {
             Toast.makeText(this, "ID del examen o correo no proporcionados", Toast.LENGTH_SHORT).show();
         }
+        FloatingActionButton fab = findViewById(R.id.fab_menu);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ResultadosActivityMejorEdu.this, home.class);
+                startActivity(intent);
+            }
+        });
 
         btn_regresar_menu.setOnClickListener(new View.OnClickListener() {
             @Override

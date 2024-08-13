@@ -11,6 +11,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 public class Seleccionar_Materia_Retroalimentacion extends AppCompatActivity {
 
     private CardView cardMejorEdu, cardOlimpiada;
@@ -33,7 +35,14 @@ public class Seleccionar_Materia_Retroalimentacion extends AppCompatActivity {
 
             }
         });
-
+        FloatingActionButton fab = findViewById(R.id.fab_menu);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Seleccionar_Materia_Retroalimentacion.this, home.class);
+                startActivity(intent);
+            }
+        });
         cardMejorEdu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
