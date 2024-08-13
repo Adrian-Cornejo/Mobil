@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name=".ApplicationClass"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/circle_background"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SimulaScore"
+        tools:targetApi="31">
+        <activity
+            android:name=".EnviarMensajeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MensajeriaActivityMaestro"
+            android:exported="false" />
+        <activity
+            android:name=".NotificacionesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AssingExamOlimpiada"
+            android:exported="false" />
+        <activity
+            android:name=".AssignExamsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RetroalimentacionOlimpiadaExamen"
+            android:exported="false" />
+        <activity
+            android:name=".ResultadosActivityMejorEdu"
+            android:exported="false" />
+        <activity
+            android:name=".homeMaestro"
+            android:exported="false" />
+        <activity
+            android:name=".RetroalimentacionMejorEduExamen"
+            android:exported="false" />
+        <activity
+            android:name=".verProgresoOlimpiada"
+            android:exported="false" />
+        <activity
+            android:name=".SeleccionarExamenResultados"
+            android:exported="false" />
+        <activity
+            android:name=".RetroalimentacionMejorEdu"
+            android:exported="false" />
+        <activity
+            android:name=".RetroalimentacionOlimpiada"
+            android:exported="false" />
+        <activity
+            android:name=".Seleccionar_Materia_Retroalimentacion"
+            android:exported="false" />
+        <activity
+            android:name=".ResultadosEspanol"
+            android:exported="false" />
+        <activity
+            android:name=".verProgreso"
+            android:exported="false" />
+        <activity
+            android:name=".EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ExamenMejorEduSeleccionarMateria"
+            android:exported="false" />
+        <activity
+            android:name=".ExamenMejorEduFCE"
+            android:exported="false" />
+        <activity
+            android:name=".ExamenMejorEduMatematicas"
+            android:exported="false" />
+        <activity
+            android:name=".ExamenMejorEduEspanol"
+            android:exported="false" />
+        <activity
+            android:name=".ExamenMejoredu"
+            android:exported="false" />
+        <activity
+            android:name=".ExamenOlimpiada"
+            android:exported="false" />
+        <activity
+            android:name=".home"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MaestroSingupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EstudianteSignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MaestroLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EstudianteLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DirectivoLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

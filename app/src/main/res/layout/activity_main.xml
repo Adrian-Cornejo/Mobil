@@ -1,0 +1,103 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#fbeadf">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp">
+
+
+        <TextView
+            android:layout_width="283dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="PERFILES ESCOLARES"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:fontFamily="@font/staatliches"
+            android:layout_marginTop="20dp"
+            android:id="@+id/Perfiles"
+
+            />
+
+        <!-- Perfil Directivo -->
+
+
+        <!-- Perfil Estudiante -->
+        <FrameLayout
+            android:id="@+id/frame_estudiante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:background="@drawable/circle_background"
+                android:scaleType="centerCrop"/>
+
+            <ImageView
+                android:id="@+id/image_estudiante"
+                android:layout_width="190dp"
+                android:layout_height="190dp"
+                android:src="@drawable/alumno"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Estudiante"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/text_background"
+            android:padding="10dp"
+            android:fontFamily="@font/staatliches"/>
+
+        <!-- Perfil Maestro -->
+        <FrameLayout
+            android:id="@+id/frame_maestro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:background="@drawable/circle_background"
+                android:scaleType="centerCrop"/>
+
+            <ImageView
+                android:id="@+id/image_maestro"
+                android:layout_width="190dp"
+                android:layout_height="180dp"
+                android:src="@drawable/maestro"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Maestro"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/text_background"
+            android:padding="10dp"
+            android:fontFamily="@font/staatliches"/>
+
+    </LinearLayout>
+</ScrollView>

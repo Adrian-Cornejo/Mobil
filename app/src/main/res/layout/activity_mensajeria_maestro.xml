@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/teacher_background">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e2c4b6"
+        android:elevation="4dp"
+        android:padding="8dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/staatliches"
+            android:text="SIMULASCORE"
+            android:textColor="@android:color/black"
+            android:textSize="30sp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Título de la interfaz -->
+    <TextView
+        android:id="@+id/tv_titulo_interfaz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MENSAJERIa: Listado de Alumnos"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:fontFamily="@font/staatliches"
+        android:gravity="center"
+        android:padding="8dp"
+         />
+
+    <!-- SearchView para buscar alumnos -->
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:iconifiedByDefault="false"
+        android:queryHint="Buscar alumno..."
+        android:background="#000"
+        android:padding="8dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_alumnos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/searchView"
+        android:paddingTop="16dp"
+        android:scrollbars="vertical" />
+
+</LinearLayout>

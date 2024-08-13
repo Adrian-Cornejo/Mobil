@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/alert_dialog_background">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alerta"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/staatliches"
+        android:paddingBottom="10dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/dialog_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mensaje de advertencia"
+        android:textSize="20sp"
+        android:textColor="@color/student_error"
+        android:fontFamily="@font/staatliches"
+        android:paddingBottom="10dp"
+        />
+
+    <Button
+        android:id="@+id/dialog_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entendido"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/student_color_accent"
+        android:textColor="@color/white"
+        android:fontFamily="@font/staatliches"
+        android:textSize="20sp"
+        />
+
+</LinearLayout>

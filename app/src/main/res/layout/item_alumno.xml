@@ -1,0 +1,67 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1dp"
+    android:layout_marginTop="1dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:elevation="4dp"
+    android:background="@color/white"
+    android:backgroundTint="@color/teacher_background"
+
+    android:foreground="?attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Nombre y Apellido del Alumno -->
+        <TextView
+            android:id="@+id/tv_nombre_alumno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre Apellido"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:layout_marginLeft="16dp"
+            android:fontFamily="@font/staatliches" />
+
+        <!-- Código del Alumno -->
+        <TextView
+            android:id="@+id/tv_codigo_alumno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Código del Alumno"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp"
+            android:layout_below="@id/tv_nombre_alumno"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/staatliches" />
+
+        <!-- Correo del Alumno -->
+        <TextView
+            android:id="@+id/tv_email_alumno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Correo del Alumno"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp"
+            android:layout_below="@id/tv_codigo_alumno"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="16dp"
+            android:fontFamily="@font/staatliches" />
+
+        <!-- Botón para enviar mensaje -->
+        <ImageButton
+            android:id="@+id/btn_enviar_mensaje"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/baseline_message_24"
+            android:contentDescription="Enviar mensaje" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iv_error_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_error_24"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_error_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Error de Conexión"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/student_error"
+        android:layout_below="@id/iv_error_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tv_error_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hemos detectado un problema con tu conexión a internet. Verifica tu conexión para evitar perder tus respuestas."
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/tv_error_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btn_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cerrar"
+        android:layout_below="@id/tv_error_message"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/student_error"
+        android:textColor="@color/white" />
+</RelativeLayout>

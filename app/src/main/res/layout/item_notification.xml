@@ -1,0 +1,82 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginTop="8dp"
+    android:elevation="6dp"
+    android:radius="16dp"
+    android:background="@drawable/card_bg_morado"
+    android:backgroundTint="@color/student_color_accent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Contenedor para el contenido y el ícono -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/notification_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/baseline_notifications_24"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="8dp"
+                android:contentDescription="notificacion" />
+
+            <TextView
+                android:id="@+id/textView_contenido"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/notification_icon"
+                android:layout_alignParentEnd="true"
+                android:text="Contenido de la notificación"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:maxLines="10"
+                android:ellipsize="end"
+                android:layout_marginStart="8dp"
+                android:gravity="center_vertical" />
+        </RelativeLayout>
+
+        <!-- Separador -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/darker_gray" />
+
+        <!-- Información del profesor y la fecha -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textView_profesor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Profesor: Admin Root"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView_fecha_hora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2024-08-09 01:18:22"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

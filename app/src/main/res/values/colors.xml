@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Colores para Alumnos -->
+    <color name="student_color_primary">#cef9f3</color> <!-- Verde vibrante -->
+    <color name="student_color_secondary">#33cec3</color> <!-- Verde claro -->
+    <color name="student_color_accent">#137271</color> <!-- Verde agua suave -->
+
+    <!-- Colores de texto para Alumnos -->
+    <color name="student_text_primary">#FFFFFF</color> <!-- Blanco para contraste con los verdes oscuros -->
+    <color name="student_text_secondary">#862D98</color> <!-- Negro para textos sobre fondos claros -->
+
+    <!-- Colores de fondo para Alumnos -->
+    <color name="student_background">#FFFFFF</color> <!-- Blanco para fondo principal -->
+    <color name="student_surface">#F0F0F0</color> <!-- Gris muy claro para superficies -->
+
+    <!-- Colores para botones de Alumnos -->
+    <color name="student_button_color">#137271</color> <!-- Verde primario para botones -->
+    <color name="student_button_pressed_color">#0B4948</color> <!-- Verde oscuro para estado presionado -->
+
+    <!-- Colores de error y advertencia para Alumnos -->
+    <color name="student_error">#FF0000</color> <!-- Rojo suave para errores -->
+    <color name="student_warning">#FFD54F</color> <!-- Amarillo para advertencias -->
+
+    <!-- Colores comunes -->
+    <color name="common_background">#fbeadf</color> <!-- Fondo común usado en ScrollView -->
+    <color name="common_text_black">#000000</color> <!-- Colores para Directivos -->
+
+    <color name="director_background">#e2c4b6</color>
+    <color name="director_text">#EDEDED</color>
+    <color name="director_accent">#DAA49A</color>
+    <color name="director_button">#687483</color>
+    <!-- Colores para Maestros -->
+    <color name="teacher_background">#fbeadf</color>
+    <color name="teacher_text">#333333</color>
+    <color name="teacher_accent">#81B622</color>
+
+    <color name="menu_background_color">#FFFFFF</color>
+    <color name="menu_item_text_color">#000000</color>
+    <color name="menu_item_background_color">#F0F0F0</color>
+    <color name="menu_item_pressed_color">#CCCCCC</color>
+    <color name="menu_item_checked_color">#E0E0E0</color>
+
+
+</resources>

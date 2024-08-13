@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".ExamenMejoredu"
+    android:background="@color/student_color_primary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#137271"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            >
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SIMULASCORE"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                android:fontFamily="@font/staatliches"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/header001"/>
+        </androidx.appcompat.widget.Toolbar>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:paddingBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Antes de resolver el examen lee con atención estas instrucciones. No dudes en preguntar al aplicador cualquier duda que tengas."
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Lee detenidamente cada pregunta antes de seleccionar la respuesta. En cada pregunta hay cuatro opciones de respuesta identificadas con las letras A, B, C, D. Solo una es correcta."
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. Para contestar selecciona la respuesta que consideres correcta y de forma automática se llenará tu hoja de respuestas."
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3. Asegúrate de elegir la respuesta correcta. Si te equivocas puedes seleccionar otra y esta se cambiará de forma automática."
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4. Si llegas a tener dudas al contestar tu examen, levanta la mano para que el aplicador se acerque y te aclare. NO te comuniques con nadie."
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5. Puedes tener a la mano hojas en blanco para poder hacer tus anotaciones."
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6. No está permitido utilizar cuadernos, tarjetas u hojas de apuntes."
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="7. El tiempo máximo para contestar este examen es de 3 horas."
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="8. Contesta todo tu examen, si hay preguntas que se te dificulten, no te detengas demasiado. Si otros compañeros terminan antes que tú, no te presiones ni te inquietes."
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="9. El simulador te avisará 10 minutos antes de que termine el tiempo establecido para responder."
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="10. Recuerda que NO puedes copiar o comunicarte con tus compañeros."
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="11. NO puedes salir de la página del examen mientras lo estás contestando, ya que si lo haces se cerrará de forma automática y te quedarás sin oportunidad para aplicarlo de nuevo."
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="12. Al terminar de responder tu examen da click a ENVIAR y avisa a tu aplicador."
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginBottom="16dp">
+
+                <!-- Botón de Español -->
+                <Button
+                    android:id="@+id/btn_espanol"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Puedes iniciar"
+                    android:layout_marginBottom="8dp"
+                    android:padding="16dp"
+                    android:drawableStart="@drawable/baseline_start_24"
+                    android:background="@drawable/rounded_background"
+                    android:textColor="@color/white"
+                    android:textSize="40sp"
+                    android:fontFamily="@font/staatliches" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

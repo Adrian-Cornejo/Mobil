@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/perfil"
+        android:title="Ver Perfil"/>
+    <item
+        android:id="@+id/configuracion"
+        android:title="Configuración"/>
+    <item
+        android:id="@+id/Cerrar"
+        android:title="Cerrar Sesión"/>
+</menu>
